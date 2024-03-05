@@ -1,6 +1,7 @@
 import path from 'path';
+import * as url from 'url';
 
-const dirname = import.meta.dirname;
+const dirname = url.fileURLToPath(new URL('.', import.meta.url));
 
 export default {
   name: '@bagaar/ember-template-lint-plugin',
