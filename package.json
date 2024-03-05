@@ -6,6 +6,10 @@
     "type": "git",
     "url": "git+ssh://git@github.com/Bagaar/ember-template-lint-plugin.git"
   },
+  "description": "Ember template lint configuration for Bagaar Ember projects.",
+  "license": "MIT",
+  "author": "Bagaar",
+  "private": false,
   "type": "module",
   "devDependencies": {
     "concurrently": "8.2.0",
