@@ -4,7 +4,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:Bagaar/ember-template-lint-plugin.git"
+    "url": "git+ssh://git@github.com/Bagaar/ember-template-lint-plugin.git"
   },
   "type": "module",
   "devDependencies": {
