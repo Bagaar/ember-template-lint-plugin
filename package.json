@@ -1,0 +1,39 @@
+{
+  "name": "@bagaar/ember-template-lint-plugin",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Bagaar/ember-template-lint-plugin.git"
+  },
+  "type": "module",
+  "devDependencies": {
+    "concurrently": "8.2.0",
+    "lint-staged": "15.2.0",
+    "prettier-plugin-sort-json": "3.1.0"
+  },
+  "peerDependencies": {
+    "ember-template-lint": "^5.13.0",
+    "ember-template-lint-plugin-prettier": "^5.0.0"
+  },
+  "scripts": {
+    "lint": "concurrently \"npm:lint:*(!fix)\" --names \"lint:\" --prefix-colors auto",
+    "lint:fix": "concurrently \"npm:lint:*:fix\" --names \"fix:\" --prefix-colors auto",
+    "lint:format": "prettier . --cache --check",
+    "lint:format:fix": "prettier . --cache --write"
+  },
+  "files": [
+    "plugins/**"
+  ],
+  "lint-staged": {
+    "*": "prettier --write"
+  },
+  "packageManager": "pnpm@8.15.2",
+  "volta": {
+    "node": "20.11.0",
+    "pnpm": "8.15.2"
+  },
+  "keywords": [
+    "hbs"
+  ]
+}
