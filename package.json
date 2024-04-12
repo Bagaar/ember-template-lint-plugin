@@ -14,13 +14,15 @@
   "devDependencies": {
     "concurrently": "8.2.0",
     "lint-staged": "15.2.0",
-    "prettier-plugin-sort-json": "3.1.0"
+    "prettier-plugin-sort-json": "3.1.0",
+    "release-it": "17.2.0"
   },
   "peerDependencies": {
     "ember-template-lint": "^5.13.0 || ^6.0.0",
     "ember-template-lint-plugin-prettier": "^5.0.0"
   },
   "scripts": {
+    "release": "release-it",
     "lint": "concurrently \"npm:lint:*(!fix)\" --names \"lint:\" --prefix-colors auto",
     "lint:fix": "concurrently \"npm:lint:*:fix\" --names \"fix:\" --prefix-colors auto",
     "lint:format": "prettier . --cache --check",
