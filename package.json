@@ -30,7 +30,7 @@
     "plugins/**"
   ],
   "lint-staged": {
-    "*": "prettier --write"
+    "*": "prettier --write --ignore-unknown"
   },
   "packageManager": "pnpm@8.15.2",
   "volta": {
