@@ -18,8 +18,7 @@
     "release-it": "17.2.0"
   },
   "peerDependencies": {
-    "ember-template-lint": "^5.13.0 || ^6.0.0",
-    "ember-template-lint-plugin-prettier": "^5.0.0"
+    "ember-template-lint": "^5.13.0 || ^6.0.0"
   },
   "scripts": {
     "release": "release-it",
